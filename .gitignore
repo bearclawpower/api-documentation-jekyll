@@ -1,0 +1,5 @@
+_site/
+.sass-cache/
+jekyll-3.3.0/
+*.zip
+.jekyll-metadata
