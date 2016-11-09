@@ -1135,3 +1135,28 @@ code.output {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
+.text-pink {
+  color: #faa;
+}
+
+.width-25-percent {
+  width: 25%;
+}
+
+.width-33-percent {
+  width: 33%;
+}
+
+.width-50-percent {
+  width: 50%;
+}
+
+.width-100-percent {
+  width: 100%;
+}
+
+input,
+textarea {
+  font-size: .75em;
+}
