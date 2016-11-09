@@ -14,13 +14,13 @@ Assuming you have completed the [signup process][Signup] and have been issued an
 
 <div class="note info">
   <h5>Just an example</h5>
-  <p>Keep in mind that there are many, many other ways to make HTTP requests besides <code>curl</code>. We'll go into more detail throughout the documentation but the cURL example is one 
-  that many programmers/developers/engineers are familiar with.</p>
+  <p>Keep in mind that there are many, many other ways to make HTTP requests besides <code>curl</code>. We'll go into more detail throughout the documentation but the cURL example 
+  is one that many programmers/developers/engineers are familiar with.</p>
 </div>
 
 Which brings us a very important point...
 
-# Before you begin
+## Before you begin
 If you're reading this documentation, chances are you are interested in obtaining data from us in a server-to-server automated fashion. If you are not, you may find the 
 [Data Depot download area][Data Depot] more useful as it allows you to download the data in a point-and-click fashion for import into your system.
 
