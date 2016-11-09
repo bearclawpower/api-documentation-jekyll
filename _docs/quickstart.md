@@ -4,25 +4,35 @@ title: Quick-start guide
 permalink: /docs/quickstart/
 ---
 
-For the impatient, here's how to get a boilerplate Jekyll site up and running.
+TLDR; For the impatient, here's how to make a request to our API.
 
 ```sh
-~ $ gem install jekyll bundler
-~ $ jekyll new myblog
-~ $ cd myblog
-~/myblog $ bundle exec jekyll serve
-# => Now browse to http://localhost:4000
+~ $ curl -H "Authorization: Bearer Abc123XYZ" http://api.wps-inc.com/items
 ```
 
-The `jekyll new` command now automatically initiates `bundle install` and installs the dependencies required. To skip this, pass `--skip-bundle` option like so `jekyll new myblog --skip-bundle`.
+Assuming you have completed the [signup process][Signup] and have been issued an access token, that request will return a list of [Items][Items].
 
-If you wish to install jekyll into an existing directory, you can do so by running `jekyll new .` from within the directory instead of creating a new one. If the existing directory isn't empty, you'll also have to pass the `--force` option like so `jekyll new . --force`.
+<div class="note info">
+  <h5>Just an example</h5>
+  <p>Keep in mind that there are many, many other ways to make HTTP requests besides <code>curl</code>. We'll go into more detail throughout the documentation but the cURL example is one 
+  that many programmers/developers/engineers are familiar with.</p>
+</div>
 
-That's nothing, though. The real magic happens when you start creating blog
-posts, using the front matter to control templates and layouts, and taking
-advantage of all the awesome configuration options Jekyll makes available.
+Which brings us a very important point...
 
-If you're running into problems, ensure you have all the [requirements
-installed][Installation].
+# Before you begin
+If you're reading this documentation, chances are you are interested in obtaining data from us in a server-to-server automated fashion. If you are not, you may find the 
+[Data Depot download area][Data Depot] more useful as it allows you to download the data in a point-and-click fashion for import into your system.
 
-[Installation]: /docs/installation/
+<div class="note warning">
+  <h5>The obligatory out-of-your-depth warning</h5>
+  <p>The API is designed to be used by programmers who are familiar with the transmission of data via HTTP in a RESTful way. If you do not understand what those technologies mean, 
+  you may need to hire a programmer or recruit additional help from a third party.</p>
+</div>
+
+Simply put, if you are a programmer, I.T. manager, and/or a technology professional seeking a way to acquire and transmit data to and from Western Power Sports, 
+continue reading.
+
+[Signup]: /
+[Items]: /
+[Data Depot]: http://www.wps-inc.com/data-depot
