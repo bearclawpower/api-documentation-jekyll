@@ -5,39 +5,31 @@ permalink: /docs/home/
 redirect_from: /docs/index.html
 ---
 
-This site aims to be a comprehensive guide to Jekyll. We’ll cover topics such
-as getting your site up and running, creating and managing your content,
-customizing the way your site works and looks, deploying to various
-environments, and give you some advice on participating in the future
-development of Jekyll itself.
+This site aims to be a comprehensive guide to Version 4 of the WPS API. We’ll cover topics such as the purpose of the API, signing up for access, obtaining an access token, 
+determining what resources we offer, making your first request, and what to do if you have trouble getting the information you need.
 
-## So what is Jekyll, exactly?
+## So what is the WPS API, exactly?
 
-Jekyll is a simple, blog-aware, static site generator. It takes a template
-directory containing raw text files in various formats, runs it through
-a converter (like [Markdown](https://daringfireball.net/projects/markdown/))
-and our [Liquid](https://github.com/Shopify/liquid/wiki) renderer, and
-spits out a complete, ready-to-publish static website suitable
-for serving with your favorite web server. Jekyll also happens to be the engine
-behind [GitHub Pages](https://pages.github.com), which means you can use Jekyll
-to host your project’s page, blog, or website from GitHub’s servers **for
-free**.
+The WPS API is an easy-to-use, robust, and reliable way for dealers and/or other third parties to obtain product information that WPS has tirelessly acquired, generated, and 
+organized. This information can be used to populate your database, save and organize for import into software for your specific purpose, or even consume in real-time dynamically 
+on your website. Whether you writing a small script that quickly spins through our entire product line and imports vital pieces of product information into your system, or you 
+wish to completely automate your entire product info pipeline to the various sales channels your interact with, the WPS API can help.
+
+This is all provided to the WPS dealer network **for free** and is accessible 24/7/365 by simply <a href="">signing up for access</a>.
 
 ## Helpful Hints
 
-Throughout this guide there are a number of small-but-handy pieces of
-information that can make using Jekyll easier, more interesting, and less
-hazardous. Here’s what to look out for.
+Throughout this guide there are a number of small-but-handy pieces of information that can make using the WPS API easier, more interesting, and less hazardous. Here’s what to look 
+out for.
 
 <div class="note">
-  <h5>ProTips™ help you get more from Jekyll</h5>
-  <p>These are tips and tricks that will help you be a Jekyll wizard!</p>
+  <h5>Pro Tips help you get more from the WPS API</h5>
+  <p>These are tips and tricks that will help you be a WPS API wizard!</p>
 </div>
 
 <div class="note info">
   <h5>Notes are handy pieces of information</h5>
-  <p>These are for the extra tidbits sometimes necessary to understand
-     Jekyll.</p>
+  <p>These are for the extra tidbits sometimes necessary to understand the WPS API.</p>
 </div>
 
 <div class="note warning">
@@ -47,11 +39,8 @@ hazardous. Here’s what to look out for.
 
 <div class="note unreleased">
   <h5>You'll see this by a feature that hasn't been released</h5>
-  <p>Some pieces of this website are for future versions of Jekyll that
-    are not yet released.</p>
+  <p>Some pieces of this website are for future enhancements of WPS API that are not yet released.</p>
 </div>
 
-If you come across anything along the way that we haven’t covered, or if you
-know of a tip you think others would find handy, please [file an
-issue]({{ site.repository }}/issues/new) and we’ll see about
-including it in this guide.
+If you come across anything along the way that we haven’t covered, or if you know of a tip you think others would find handy, please 
+[file an issue]({{ site.repository }}/issues/new) and we’ll see about including it in this guide.
