@@ -16,7 +16,9 @@ collections:
 
 name: WPS API • Version 4.0
 description: Our API provides a way for our dealers to communicate with our system by transmitting data over the internet.
-url: http://docs.wps-inc.com
+docs_url: http://docs.wps-inc.com
+api_protocol: http://
+api_url: api.wps-inc.com
 
 twitter:
   username: wps_dist

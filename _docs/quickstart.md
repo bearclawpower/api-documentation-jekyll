@@ -7,7 +7,7 @@ permalink: /docs/quickstart/
 TLDR; For the impatient, here's how to make a request to our API.
 
 ```sh
-~ $ curl -H "Authorization: Bearer Abc123XYZ" http://api.wps-inc.com/items
+~ $ curl -H "Authorization: Bearer Abc123XYZ" {{ site.api_protocol }}{{ site.api_url }}/items
 ```
 
 Assuming you have completed the [signup process][Signup] and have been issued an access token, that request will return a list of [Items][Items].
