@@ -1,17 +1,19 @@
 ---
 layout: docs
 title: Intro
-permalink: /docs/attributes/introduction/
+permalink: /docs/attributes/intro/
 ---
 
 [Items]: /
-[Products]: /docs/products/introduction/
+[Products]: /docs/products/intro/
 
 Attributes are a quality or feature regarded as a characteristic or inherent part of a parent object. We apply attributes to [Items][Items] (and sometimes [Products][Products]) 
 periodically as they make their way through our system. Attributes are separated into two parts: "Attribute key" and "Attribute value". Think of them as a key/value pair that are 
 interdependent and never really used separately.
 
-<code class="flag">Attributekey</code> : <code class="option">Attributevalue</code>
+<p class="align-center">
+    <code class="flag">Attributekey</code> : <code class="option">Attributevalue</code>
+</p>
 
 An example of probably the most common Attributekey would be <code class="flag">Color</code> and an example of a common Attributevalue would be <code class="option">Red</code>. Naturally, together that combination would apply to all the items of which we classify as being <em>red</em> in color. Another common attribute example would be "Size : Large" where <code class="flag">Size</code> is the Attributekey and <code class="option">Large</code> is the Attributevalue.
 

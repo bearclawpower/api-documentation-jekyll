@@ -11,10 +11,10 @@
 
 - title: Attributes
   docs:
-  - attributes/introduction
+  - attributes/intro
   - attributes/attributekeys
   - attributes/attributevalues
 
 - title: Products
   docs:
-  - products/introduction
+  - products/intro
