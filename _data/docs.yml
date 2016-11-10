@@ -9,12 +9,20 @@
   docs:
   - crutches
 
-- title: Attributes
+- title: Services
   docs:
-  - attributes/intro
-  - attributes/attributekeys
-  - attributes/attributevalues
+  - services/attributes
 
-- title: Products
+- title: Attributekeys
   docs:
-  - products/intro
+  - attributekeys/collection
+  - attributekeys/entity
+  - attributekeys/attributevalues
+
+- title: Attributevalues
+  docs:
+  - attributevalues/collection
+  - attributevalues/entity
+  - attributevalues/items
+  - attributevalues/products
+  - attributevalues/vehicles

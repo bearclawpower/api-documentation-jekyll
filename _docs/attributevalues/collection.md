@@ -1,10 +1,8 @@
 ---
 layout: docs
-title: Attributevalues
-permalink: /docs/attributes/attributevalues/
+title: Collection
+permalink: /docs/attributevalues/collection/
 ---
-
-## Collection
 
 Retrieve a collection of Attributevalues.
 
@@ -165,62 +163,6 @@ Retrieve a collection of Attributevalues.
       "next": "lqjMdY6e6Z07",
       "count": 10
     }
-  }
-}
-```
-
-## Entity
-
-Retrieve one particular Attributevalue entity.
-
-### Request
-```
-{{ site.api_protocol }}{{ site.api_url }}/attributevalues/4
-```
-
-### Response
-```json
-{
-  "data": {
-    "id": 4,
-    "attributekey_id": 15,
-    "name": "White/Black",
-    "sort": 0,
-    "created_at": "2016-06-17 20:53:25",
-    "updated_at": "2016-06-17 20:53:25",
-    "links": [
-      {
-        "rel": "self",
-        "uri": "/attributevalues/4"
-      }
-    ]
-  }
-}
-```
-
-## Parent
-
-For a given Attributevalue, retrieve its one related Attributekey.
-
-### Request
-```
-{{ site.api_protocol }}{{ site.api_url }}/attributevalues/4/attributekey
-```
-
-### Response
-```json
-{
-  "data": {
-    "id": 15,
-    "name": "Color",
-    "created_at": "2016-06-17 20:53:19",
-    "updated_at": "2016-11-08 21:23:39",
-    "links": [
-      {
-        "rel": "self",
-        "uri": "/attributekeys/15"
-      }
-    ]
   }
 }
 ```

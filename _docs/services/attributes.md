@@ -1,7 +1,7 @@
 ---
 layout: docs
-title: Intro
-permalink: /docs/attributes/intro/
+title: Attributes
+permalink: /docs/services/attributes/
 ---
 
 [Items]: /
