@@ -4,6 +4,10 @@ title: Quick-start guide
 permalink: /docs/quickstart/
 ---
 
+[Signup]: /
+[Items]: /
+[Data Depot]: http://www.wps-inc.com/data-depot
+
 TLDR; For the impatient, here's how to make a request to our API.
 
 ```sh
@@ -32,7 +36,3 @@ If you're reading this documentation, chances are you are interested in obtainin
 
 Simply put, if you are a programmer, I.T. manager, and/or a technology professional seeking a way to acquire and transmit data to and from Western Power Sports, 
 continue reading.
-
-[Signup]: /
-[Items]: /
-[Data Depot]: http://www.wps-inc.com/data-depot
