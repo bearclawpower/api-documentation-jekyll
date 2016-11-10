@@ -4,11 +4,13 @@ title: Attributes
 permalink: /docs/services/attributes/
 ---
 
+[Attributekeys]: /docs/attributekeys/collection
+[Attributevalues]: /docs/attributevalues/collection
 [Items]: /
-[Products]: /docs/products/intro/
+[Products]: /
 
 Attributes are a quality or feature regarded as a characteristic or inherent part of a parent object. We apply attributes to [Items][Items] (and sometimes [Products][Products]) 
-periodically as they make their way through our system. Attributes are separated into two parts: "Attribute key" and "Attribute value". Think of them as a key/value pair that are 
+periodically as they make their way through our system. Attributes are separated into two parts: [Attributekeys][Attributekeys] and [Attributevalues][Attributevalues]. Think of them as a key/value pair that are 
 interdependent and never really used separately.
 
 <p class="align-center">

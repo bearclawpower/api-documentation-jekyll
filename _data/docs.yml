@@ -5,9 +5,9 @@
   - signup
   - authentication
 
-- title: Making Requests
+- title: Helpers
   docs:
-  - crutches
+  - helpers/crutches
 
 - title: Services
   docs:
