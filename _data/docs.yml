@@ -5,10 +5,6 @@
   - signup
   - authentication
 
-- title: Helpers
-  docs:
-  - helpers/crutches
-
 - title: Services
   docs:
   - services/attributes
@@ -27,3 +23,11 @@
   - services/vehiclemodels
   - services/vehicleyears
   - services/vocabularies
+
+- title: Helpers
+  docs:
+  - helpers/crutches
+  - helpers/filters
+  - helpers/filtering_includes
+  - helpers/includes
+  - helpers/pagination
