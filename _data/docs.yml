@@ -9,9 +9,10 @@
   docs:
   - helpers/crutches
 
-- title: Services
+- title: Service Descriptions
   docs:
   - services/attributes
+  - services/blocks
 
 - title: Attributekeys
   docs:
@@ -26,3 +27,11 @@
   - attributevalues/items
   - attributevalues/products
   - attributevalues/vehicles
+
+- title: Blocks
+  docs:
+  - blocks/collection
+  - blocks/entity
+  - blocks/images
+  - blocks/products
+  - blocks/sites

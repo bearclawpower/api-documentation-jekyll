@@ -28,4 +28,3 @@ Retrieve one particular Attributekey entity.
   }
 }
 ```
-
