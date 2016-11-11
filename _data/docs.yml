@@ -9,29 +9,7 @@
   docs:
   - helpers/crutches
 
-- title: Service Descriptions
+- title: Services
   docs:
   - services/attributes
   - services/blocks
-
-- title: Attributekeys
-  docs:
-  - attributekeys/collection
-  - attributekeys/entity
-  - attributekeys/attributevalues
-
-- title: Attributevalues
-  docs:
-  - attributevalues/collection
-  - attributevalues/entity
-  - attributevalues/items
-  - attributevalues/products
-  - attributevalues/vehicles
-
-- title: Blocks
-  docs:
-  - blocks/collection
-  - blocks/entity
-  - blocks/images
-  - blocks/products
-  - blocks/sites

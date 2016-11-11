@@ -4,13 +4,14 @@ title: Attributes
 permalink: /docs/services/attributes/
 ---
 
-[Attributekeys]: /docs/attributekeys/collection
-[Attributevalues]: /docs/attributevalues/collection
-[Items]: /
-[Products]: /
+[var_Attributekeys]: /docs/attributekeys/collection
+[var_Attributevalues]: /docs/attributevalues/collection
+[var_Items]: /
+[var_Products]: /
+[var_Vehicles]: /
 
-Attributes are a quality or feature regarded as a characteristic or inherent part of a parent object. We apply attributes to [Items][Items] (and sometimes [Products][Products]) 
-periodically as they make their way through our system. Attributes are separated into two parts: [Attributekeys][Attributekeys] and [Attributevalues][Attributevalues]. Think of them as a key/value pair that are 
+Attributes are a quality or feature regarded as a characteristic or inherent part of a parent object. We apply attributes to [Items][var_Items] (and sometimes [Products][var_Products]) 
+periodically as they make their way through our system. Attributes are separated into two parts: [Attributekeys][var_Attributekeys] and [Attributevalues][var_Attributevalues]. Think of them as a key/value pair that are 
 interdependent and never really used separately.
 
 <p class="align-center">
@@ -78,3 +79,51 @@ More examples (there are hundreds):
         </tr>
     </tbody>
 </table>
+
+## Example requests
+
+### Attributekeys
+
+##### Collection
+```
+{{ site.api_protocol }}{{ site.api_url }}/attributekeys
+```
+
+##### Entity
+```
+{{ site.api_protocol }}{{ site.api_url }}/attributekeys/15
+```
+
+##### Associated [Attributevalues][var_Attributevalues]
+```
+{{ site.api_protocol }}{{ site.api_url }}/attributekeys/15/attributevalues
+```
+
+---
+
+### Attributevalues
+
+##### Collection
+```
+{{ site.api_protocol }}{{ site.api_url }}/attributevalues
+```
+
+##### Entity
+```
+{{ site.api_protocol }}{{ site.api_url }}/attributevalues/901
+```
+
+##### Associated [Items][var_Items]
+```
+{{ site.api_protocol }}{{ site.api_url }}/attributevalues/901/items
+```
+
+##### Associated [Products][var_Products]
+```
+{{ site.api_protocol }}{{ site.api_url }}/attributevalues/1049/products
+```
+
+##### Associated [Vehicles][var_Vehicles]
+```
+{{ site.api_protocol }}{{ site.api_url }}/attributevalues/679/vehicles
+```
