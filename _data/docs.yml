@@ -13,3 +13,17 @@
   docs:
   - services/attributes
   - services/blocks
+  - services/brands
+  - services/countries
+  - services/features
+  - services/images
+  - services/items
+  - services/products
+  - services/resources
+  - services/tags
+  - services/taxonomyterms
+  - services/vehicles
+  - services/vehiclemakes
+  - services/vehiclemodels
+  - services/vehicleyears
+  - services/vocabularies

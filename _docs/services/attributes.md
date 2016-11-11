@@ -4,11 +4,11 @@ title: Attributes
 permalink: /docs/services/attributes/
 ---
 
-[var_Attributekeys]: /docs/attributekeys/collection
-[var_Attributevalues]: /docs/attributevalues/collection
-[var_Items]: /
-[var_Products]: /
-[var_Vehicles]: /
+[var_Attributekeys]: /docs/services/attributes/#attributekeys
+[var_Attributevalues]: /docs/services/attributes/#attributevalues
+[var_Items]: /docs/services/items
+[var_Products]: /docs/services/products
+[var_Vehicles]: /docs/services/vehicles
 
 Attributes are a quality or feature regarded as a characteristic or inherent part of a parent object. We apply attributes to [Items][var_Items] (and sometimes [Products][var_Products]) 
 periodically as they make their way through our system. Attributes are separated into two parts: [Attributekeys][var_Attributekeys] and [Attributevalues][var_Attributevalues]. Think of them as a key/value pair that are 
@@ -111,6 +111,11 @@ More examples (there are hundreds):
 ##### Entity
 ```
 {{ site.api_protocol }}{{ site.api_url }}/attributevalues/901
+```
+
+##### Parent [Attributekey][var_Attributekeys]
+```
+{{ site.api_protocol }}{{ site.api_url }}/attributevalues/901/attributekey
 ```
 
 ##### Associated [Items][var_Items]
