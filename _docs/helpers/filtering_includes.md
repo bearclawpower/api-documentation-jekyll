@@ -5,7 +5,7 @@ permalink: /docs/helpers/filtering_includes/
 ---
 
 [var_Brands]: /docs/services/brands
-[var_Filters]: /doc/sservices/filters
+[var_Filters]: /doc/services/filters
 [var_Items]: /docs/services/items
 [var_Products]: /docs/services/products
 [var_Tags]: /docs/services/tags
