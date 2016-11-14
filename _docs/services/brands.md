@@ -7,7 +7,10 @@ permalink: /docs/services/brands/
 [var_Images]: /docs/services/images
 [var_Items]: /docs/services/items
 
-Brands
+A Brand is a unique design, sign, symbol, words, or a combination of these, employed in creating an image that identifies a product and differentiates it from its competitors. 
+
+In the WPS API, Brands refer to products manufactured by a particular company under a particular name. This endpoint allows you to retrieve a *collection* of all our Brands, or 
+the data surrounding a specific Brand via the *entity* endpoint.
 
 ## Example requests
 
@@ -21,12 +24,14 @@ Brands
 {{ site.api_protocol }}{{ site.api_url }}/brands/135
 ```
 
-##### Associated [Images][var_Images] 
+##### Associated Images
+ Get all the [Images][var_Images] associated to the "FLY Racing" Brand.
 ```
 {{ site.api_protocol }}{{ site.api_url }}/brands/135/images
 ```
 
-##### Associated [Items][var_Items] 
+##### Associated Items
+Get all the [Items][var_Items] associated to the "FLY Racing" Brand.
 ```
 {{ site.api_protocol }}{{ site.api_url }}/brands/135/items
 ```
