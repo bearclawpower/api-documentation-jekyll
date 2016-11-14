@@ -10,7 +10,7 @@ permalink: /docs/helpers/filters/
 
 Filters give the ability to narrow down the results of a request to specific subset of data based on properties of the service.
 
-The parameter syntax structure is: <code>?filter[<span class="text-blue">field</span>][<span class="text-green">operator</span>]=<span class="text-pink">value</span></code>.
+The parameter syntax structure is: <code>?filter<span class="text-blue">[field]</span><span class="text-pink">[operator]</span>=<span class="text-green">value</span></code>.
 
 <table>
     <thead>
@@ -21,7 +21,7 @@ The parameter syntax structure is: <code>?filter[<span class="text-blue">field</
     <tbody>
         <tr>
             <td>
-                <p><code>[eq]</code></p>
+                <p><code class="text-pink">[eq]</code></p>
             </td>
             <td>
                 <p>Equal<span class="text-pink">*</span></p>
@@ -29,7 +29,7 @@ The parameter syntax structure is: <code>?filter[<span class="text-blue">field</
         </tr>
         <tr>
             <td>
-                <p><code>[ne]</code></p>
+                <p><code class="text-pink">[ne]</code></p>
             </td>
             <td>
                 <p>Not equal</p>
@@ -37,7 +37,7 @@ The parameter syntax structure is: <code>?filter[<span class="text-blue">field</
         </tr>
         <tr>
             <td>
-                <p><code>[lt]</code></p>
+                <p><code class="text-pink">[lt]</code></p>
             </td>
             <td>
                 <p>Less than</p>
@@ -45,7 +45,7 @@ The parameter syntax structure is: <code>?filter[<span class="text-blue">field</
         </tr>
         <tr>
             <td>
-                <p><code>[lte]</code> or <code>[le]</code></p>
+                <p><code class="text-pink">[lte]</code> or <code class="text-pink">[le]</code></p>
             </td>
             <td>
                 <p>Less than or equal to</p>
@@ -53,7 +53,7 @@ The parameter syntax structure is: <code>?filter[<span class="text-blue">field</
         </tr>
         <tr>
             <td>
-                <p><code>[gt]</code></p>
+                <p><code class="text-pink">[gt]</code></p>
             </td>
             <td>
                 <p>Greater than</p>
@@ -61,7 +61,7 @@ The parameter syntax structure is: <code>?filter[<span class="text-blue">field</
         </tr>
         <tr>
             <td>
-                <p><code>[gte]</code> or <code>[ge]</code></p>
+                <p><code class="text-pink">[gte]</code> or <code class="text-pink">[ge]</code></p>
             </td>
             <td>
                 <p>Greater than or equal to</p>
@@ -69,7 +69,7 @@ The parameter syntax structure is: <code>?filter[<span class="text-blue">field</
         </tr>
         <tr>
             <td>
-                <p><code>[pre]</code></p>
+                <p><code class="text-pink">[pre]</code></p>
             </td>
             <td>
                 <p>Prefix / Starts with</p>
