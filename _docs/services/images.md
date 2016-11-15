@@ -12,7 +12,11 @@ permalink: /docs/services/images/
 [var_Tags]: /docs/services/tags
 [var_Taxonomyterms]: /docs/services/taxonomyterms
 
-Images
+The Images endpoint allows you to retrieve information about images and their relationships to other services. The information includes things like image MIME type, size, and 
+static references to the images location on the web. 
+
+Because Images are polymorphic and can be associated with many different services, chances are you would get the `id` of the Image from some other service and then use the Image 
+endpoint to look up *other* relationships of interest in regards to that particular Image.
 
 ## Example requests
 
@@ -23,40 +27,40 @@ Images
 
 ##### Entity
 ```
-{{ site.api_protocol }}{{ site.api_url }}/images/135
+{{ site.api_protocol }}{{ site.api_url }}/images/96
 ```
 
 ##### Associated [Blocks][var_Blocks] 
 ```
-{{ site.api_protocol }}{{ site.api_url }}/images/135/blocks
+{{ site.api_protocol }}{{ site.api_url }}/images/49944/blocks
 ```
 
 ##### Associated [Brands][var_Brands] 
 ```
-{{ site.api_protocol }}{{ site.api_url }}/images/135/brands
+{{ site.api_protocol }}{{ site.api_url }}/images/96/brands
 ```
 
 ##### Associated [Items][var_Items] 
 ```
-{{ site.api_protocol }}{{ site.api_url }}/images/135/items
+{{ site.api_protocol }}{{ site.api_url }}/images/18220/items
 ```
 
 ##### Associated [Posts][var_Posts] 
 ```
-{{ site.api_protocol }}{{ site.api_url }}/images/135/posts
+{{ site.api_protocol }}{{ site.api_url }}/images/51112/posts
 ```
 
 ##### Associated [Products][var_Products] 
 ```
-{{ site.api_protocol }}{{ site.api_url }}/images/135/products
+{{ site.api_protocol }}{{ site.api_url }}/images/48572/products
 ```
 
 ##### Associated [Tags][var_Tags] 
 ```
-{{ site.api_protocol }}{{ site.api_url }}/images/135/tags
+{{ site.api_protocol }}{{ site.api_url }}/images/1/tags
 ```
 
 ##### Associated [Taxonomyterms][var_Taxonomyterms] 
 ```
-{{ site.api_protocol }}{{ site.api_url }}/images/135/taxonomyterms
+{{ site.api_protocol }}{{ site.api_url }}/images/49957/taxonomyterms
 ```
