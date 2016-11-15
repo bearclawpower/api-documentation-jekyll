@@ -11,7 +11,47 @@ permalink: /docs/services/items/
 [var_Tags]: /docs/services/tags
 [var_Vehicles]: /docs/services/vehicles
 
-Items
+Items are the building blocks of a [Product][var_Products]. They are simplest form of a [Product][var_Products] and refer to one individual variant (specific configuration) or 
+**SKU** of a [Product][var_Products]. For example: the *FLY Patrol Jersey* is a [Product][var_Products], whereas the *SKU:370-6402X 2X-Large Black/Grey FLY Patrol Jersey* is an Item.
+
+<table>
+    <thead>
+        <tr>
+            <th>Products</th>
+            <th>Items</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                FLY Patrol Jersey
+            </td>
+            <td>
+                <p><strong>370-640S</strong> &rarr; Small &rarr; Black/Grey &rarr; FLY Patrol Jersey</p>
+                <p><strong>370-640M</strong> &rarr; Medium &rarr; Black/Grey &rarr; FLY Patrol Jersey</p>
+                <p><strong>370-640L</strong> &rarr; Large &rarr; Black/Grey &rarr; FLY Patrol Jersey</p>
+                <p><strong>370-640X</strong> &rarr; X-Large &rarr; Black/Grey &rarr; FLY Patrol Jersey</p>
+                <p><strong>370-6402X</strong> &rarr; 2X-Large &rarr; Black/Grey &rarr; FLY Patrol Jersey</p>
+                ...
+            </td>
+        </tr>
+        <tr>
+            <td>
+                FLY Trekker Helmet
+            </td>
+            <td>
+                <p><strong>73-1010XS</strong> &rarr; X-Small &rarr; Gloss Black &rarr; Trekker Helmet</p>
+                <p><strong>73-1010S</strong> &rarr; Small &rarr; Gloss Black &rarr; Trekker Helmet</p>
+                <p><strong>73-1010M</strong> &rarr; Medium &rarr; Gloss Black &rarr; Trekker Helmet</p>
+                ...
+                <p><strong>73-1014XS</strong> &rarr; X-Small &rarr; Hi-Vis Yellow &rarr; Trekker Helmet</p>
+                <p><strong>73-1014S</strong> &rarr; Small &rarr; Hi-Vis Yellow &rarr; Trekker Helmet</p>
+                <p><strong>73-1014M</strong> &rarr; Medium &rarr; Hi-Vis Yellow &rarr; Trekker Helmet</p>
+                ...
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ## Example requests
 
