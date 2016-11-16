@@ -6,7 +6,8 @@ permalink: /docs/services/vehiclemakes/
 
 [var_Vehiclemodels]: /docs/services/vehiclemodels
 
-Vehiclemakes
+You guessed it, the Vehiclemakes endpoint provides information on vehicle makes. This can be useful to retrieve the list of vehicle makes such as `Arctic Cat`, `Honda`, 
+`Kawasaki`, `Polaris`, `Suzuki`, etc. You can also use this endpoint to gather up the [Vehiclemodels][var_Vehiclemodels] associated to each Vehiclemake.
 
 {% include fitment_access_warning.html %}
 
