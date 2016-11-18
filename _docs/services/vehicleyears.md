@@ -27,7 +27,7 @@ You can also determine all the [Vehiclemodels][var_Vehiclemodels] that are assoc
 {{ site.api_protocol }}{{ site.api_url }}/vehicleyears/61
 ```
 
-###### Associated [Vehiclemodels][var_Vehiclemodels] 
+###### Associated [Vehiclemodels][var_Vehiclemodels]
 ```
 {{ site.api_protocol }}{{ site.api_url }}/vehicleyears/61/vehiclemodels
 ```

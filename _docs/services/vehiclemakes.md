@@ -23,7 +23,7 @@ You guessed it, the Vehiclemakes endpoint provides information on vehicle makes.
 {{ site.api_protocol }}{{ site.api_url }}/vehiclemakes/23
 ```
 
-###### Associated [Vehiclemodels][var_Vehiclemodels] 
+###### Associated [Vehiclemodels][var_Vehiclemodels]
 ```
 {{ site.api_protocol }}{{ site.api_url }}/vehiclemakes/23/vehiclemodels
 ```

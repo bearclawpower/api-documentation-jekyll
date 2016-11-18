@@ -71,7 +71,7 @@ The other *types* of Resources would also work the same way. We provide the Vime
 {{ site.api_protocol }}{{ site.api_url }}/resources/1
 ```
 
-##### Associated [Products][var_Products] 
+##### Associated [Products][var_Products]
 ```
 {{ site.api_protocol }}{{ site.api_url }}/resources/1/products
 ```

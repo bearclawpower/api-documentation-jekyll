@@ -24,12 +24,12 @@ The `data` property is a *string* of markup that is commonly included when displ
 {{ site.api_protocol }}{{ site.api_url }}/blocks/1
 ```
 
-##### Associated [Images][var_Images] 
+##### Associated [Images][var_Images]
 ```
 {{ site.api_protocol }}{{ site.api_url }}/blocks/27/images
 ```
 
-##### Associated [Products][var_Products] 
+##### Associated [Products][var_Products]
 ```
 {{ site.api_protocol }}{{ site.api_url }}/blocks/27/products
 ```

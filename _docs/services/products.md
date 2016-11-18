@@ -54,12 +54,12 @@ Products
 {{ site.api_protocol }}{{ site.api_url }}/products/207997/images
 ```
 
-##### Associated [Items][var_Items] 
+##### Associated [Items][var_Items]
 ```
 {{ site.api_protocol }}{{ site.api_url }}/products/207997/items
 ```
 
-##### Associated [Resources][var_Resources] 
+##### Associated [Resources][var_Resources]
 ```
 {{ site.api_protocol }}{{ site.api_url }}/products/26/resources
 ```

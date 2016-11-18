@@ -36,7 +36,7 @@ Lastly, if you wish to determine all the [Vehicleyears][var_Vehicleyears] associ
 {{ site.api_protocol }}{{ site.api_url }}/vehiclemodels/2908/taxonomyterms
 ```
 
-###### Associated [Vehicleyears][var_Vehicleyears] 
+###### Associated [Vehicleyears][var_Vehicleyears]
 ```
 {{ site.api_protocol }}{{ site.api_url }}/vehiclemodels/2908/vehicleyears
 ```
