@@ -6,7 +6,12 @@ permalink: /docs/services/vehicleyears/
 
 [var_Vehiclemodels]: /docs/services/vehiclemodels
 
-Vehicleyears
+Vehicleyears (or **vehicle year** or **year of vehicle**, and typically abbreviated to just “year”) is used to describe approximately the year in which a vehicle was produced.
+(ie. `1995`, `2006`, `2013`, etc.)
+
+The Vehicleyear endpoint allows you to retrieve a *collection* of all our Vehicleyears, or the data surrounding a specific Vehicleyear via the *entity* endpoint.
+
+You can also determine all the [Vehiclemodels][var_Vehiclemodels] that are associated with a given Vehicleyear.
 
 {% include fitment_access_warning.html %}
 
