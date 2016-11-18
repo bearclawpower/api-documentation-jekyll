@@ -7,7 +7,7 @@ var app = app || {};
 
     app.init = function () {
         $('h1').on('click', function () {
-            alert('test');
+            //alert('test');
         });
     };
 })(jQuery);
