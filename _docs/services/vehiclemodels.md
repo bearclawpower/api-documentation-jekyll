@@ -8,8 +8,8 @@ permalink: /docs/services/vehiclemodels/
 [var_Vehicleyears]: /docs/services/vehicleyears
 
 Vehiclemodels (or **vehicle model** or **model of vehicle**, and typically abbreviated to just "model") is a particular brand of vehicle sold under a marque by a manufacturer, 
-usually within a range of models, usually of different sizes or capabilities. A few common examples are: Bonneville 865, CRF250R, FXD Dyna Super Glide, GSX-R600, RZR 800, 
-ZR 6000 LXR, and so on.
+usually within a range of models, usually of different sizes or capabilities. A few common examples are: `Bonneville 865`, `CRF250R`, `FXD Dyna Super Glide`, `GSX-R600`, `RZR 800`, 
+`ZR 6000 LXR`, and so on.
 
 The Vehiclemodel endpoint allows you to retrieve a *collection* of all our Vehiclemodels, or the data surrounding a specific Vehiclemodel via the *entity* endpoint.
 
