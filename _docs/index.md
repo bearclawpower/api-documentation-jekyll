@@ -5,6 +5,8 @@ permalink: /docs/home/
 redirect_from: /docs/index.html
 ---
 
+[var_Signup]: /docs/signup
+
 This site aims to be a comprehensive guide to Version 4 of the WPS API. We’ll cover topics such as the purpose of the API, signing up for access, obtaining an access token, 
 determining what resources we offer, making your first request, and what to do if you have trouble getting the information you need.
 
@@ -15,7 +17,7 @@ organized. This information can be used to populate your database, save and orga
 on your website. Whether you writing a small script that quickly spins through our entire product line and imports vital pieces of product information into your system, or you 
 wish to completely automate your entire product info pipeline to the various sales channels your interact with, the WPS API can help.
 
-This is all provided to the WPS dealer network **for free** and is accessible 24/7/365 by simply <a href="">signing up for access</a>.
+This is all provided to the WPS dealer network **for free** and is accessible 24/7/365 by simply [signing up for access][var_Signup].
 
 ## Helpful Hints
 
