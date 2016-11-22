@@ -9,6 +9,109 @@
 {% include anchor_links.html %}
 {% include analytics.html %}
 <script src="//code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
-<script src="/js/app-0.js"></script>
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.7.5.min.js"></script>
+
+<script>
+    var app = app || {};
+
+    (function ($) {
+        $(function () {
+            app.region = 'us-west-2';
+            app.identity_pool_id = app.region + ':' + 'Enter identity pool id here';
+
+            app.init();
+        });
+
+        app.init = function () {
+            AWS.config.update({
+                credentials: new AWS.CognitoIdentityCredentials({
+                    IdentityPoolId: app.identity_pool_id
+                }),
+                region: app.region
+            });
+
+            // For debugging the credentials that were sent.
+//            AWS.config.credentials.get(function (err) {
+//                if (err) console.log(err);
+//                else console.log(AWS.config.credentials);
+//            });
+
+            $('button[type="submit"]').on('click', function (event) {
+                event.preventDefault();
+                app.send();
+            });
+        };
+
+        app.send = function () {
+            var ses = new AWS.SES({
+                apiVersion: '2010-12-01',
+                region: app.region
+            });
+
+            var name = $('input[name="name"]');
+            var phone = $('input[name="phone"]');
+            var email = $('input[name="email"]');
+            var dealer_id = $('input[name="dealer_id"]');
+            var comments = $('textarea[name="comments"]');
+
+            if (!name.val()) {
+                alert('The "Name" field is required.');
+                name.focus();
+                return false;
+            }
+            if (!phone.val()) {
+                alert('The "Phone" field is required.');
+                phone.focus();
+                return false;
+            }
+            if (!email.val()) {
+                alert('The "Email" field is required.');
+                email.focus();
+                return false;
+            }
+            if (!dealer_id.val()) {
+                alert('The "Dealer ID" field is required.');
+                dealer_id.focus();
+                return false;
+            }
+
+            var params = {
+                Source: 'amaddox@wps-inc.com',
+                Destination: {
+                    ToAddresses: [
+                        'amaddox@wps-inc.com'
+                    ]
+                },
+                Message: {
+                    Body: {
+                        Html: {
+                            Data: '' +
+                            '<p><strong>Name: </strong>' + name.val() + '</p>' +
+                            '<p><strong>Phone: </strong>' + phone.val() + '</p>' +
+                            '<p><strong>Email: </strong>' + email.val() + '</p>' +
+                            '<p><strong>Dealer ID: </strong>' + dealer_id.val() + '</p>' +
+                            '<p><strong>Comments: </strong>' + comments.val() + '</p>'
+                        }
+                    },
+                    Subject: {
+                        Data: 'Submission from the WPS API v4 Sign-up Form'
+                    }
+                },
+                ReplyToAddresses: [
+                    email.val()
+                ]
+            };
+            ses.sendEmail(params, function (err, data) {
+                if (err) {
+                    alert(err);
+                    console.log(err, err.stack)
+                } else {
+                    $('article').html('<h5>Thanks! Your submission has been sent. We will be in touch shortly.</h5>');
+                    $('html,body').scrollTop(0);
+                }
+            });
+        };
+    })(jQuery);
+</script>
 </body>
 </html>

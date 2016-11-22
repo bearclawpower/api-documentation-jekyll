@@ -44,5 +44,15 @@ out for.
     <p>Some pieces of this website are for future enhancements of WPS API that are not yet released.</p>
 </div>
 
-If you come across anything along the way that we haven’t covered, or if you know of a tip you think others would find handy, please 
-[file an issue]({{ site.repository }}/issues/new) and we’ll see about including it in this guide.
+## Documentation
+This entire site is an open-source repository managed via <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>, so you can easily correct mistakes or add 
+content in our documentation yourself as you build your applications&mdash;just <a href="{{ site.repository }}/fork" target="_blank">fork the project</a> and submit a pull request!
+                                
+If you aren't too keen on GitHub and/or pull requests, you can simply create an issue to bring it to our attention. Basically, if you come across anything along the way that we 
+haven’t covered, or if you know of a tip you think others would find handy, please [file an issue]({{ site.repository }}/issues/new) and we’ll see about including it in our 
+documentation. <a href="https://help.github.com/categories/collaborating-with-issues-and-pull-requests/" target="_blank">Learn more about collaborating with GitHub &rarr;</a>
+
+## Support
+It is our goal at WPS to create the tools and services you need to succeed in this competitive market. If you have questions about permissions, acceptable uses, and best practices 
+please let us know. If you are experiencing technical difficulties, please consult the API Documentation first. Many times the answer will be there. But if you still need help, 
+please give us a call at <a href="tel:8009993388">1-800-999-3388</a> and we'll be glad to help.

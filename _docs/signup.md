@@ -13,6 +13,10 @@ you can start making requests to our API.
   <p>To get started using any version of our API, you must be an active dealer in good standing with Western Power Sports. You will be required to provide valid wpsorders.com credentials.</p>
 </div>
 
+## Approval process
+Please allow 1-3 business days for your submission to be approved and your information to be added into our system. Once approved your will receive an email stating that you have 
+been approved and are ready to begin accessing our data.
+
 ## Sign-up Form
 <div class="mobile-side-scroller">
     <form action="" method="post" accept-charset="utf-8">
@@ -30,8 +34,8 @@ you can start making requests to our API.
                         </p>
                     </td>
                     <td>
-                        <div><input type="text" name="name" class="width-50-percent" value=""></div>
-                        <p>Enter your name. (ie. John Doe)</p>
+                        <div><input type="text" name="name" class="width-50-percent" value="" autofocus required></div>
+                        <p>Enter your full name. (ie. John Doe)</p>
                     </td>
                 </tr>
                 <tr>
@@ -41,7 +45,7 @@ you can start making requests to our API.
                         </p>
                     </td>
                     <td>
-                        <div><input type="text" name="phone" class="width-33-percent" value=""></div>
+                        <div><input type="tel" name="phone" class="width-33-percent" value="" required></div>
                         <p>A good number to reach you at. (ie. 800-999-3388)</p>
                     </td>
                 </tr>
@@ -52,7 +56,7 @@ you can start making requests to our API.
                         </p>
                     </td>
                     <td>
-                        <div><input type="type" name="email" class="width-50-percent" value=""></div>
+                        <div><input type="email" name="email" class="width-50-percent" value="" required></div>
                         <p>Your email address. (ie. john@example.com)</p>
                     </td>
                 </tr>
@@ -63,7 +67,7 @@ you can start making requests to our API.
                         </p>
                     </td>
                     <td>
-                        <div><input type="text" name="dealer_id" class="width-33-percent" value=""></div>
+                        <div><input type="text" name="dealer_id" class="width-33-percent" value="" required></div>
                         <p>
                             Enter the <em>Dealer Identifier</em> that was assigned to you by Western Power Sports when you became a dealer. (Your wpsorders.com dealer number. ie. D1234567)
                         </p>
@@ -98,14 +102,5 @@ you can start making requests to our API.
   <p>In previous versions of the API we required dealers to provide the static IP address of the web server being used to make requests to our API. This is no longer a requirement 
   in the WPS API v4.</p>
 </div>
-
-## Approval process
-Please allow 1-3 business days for your submission to be approved and your information to be added into our system. Once approved your will receive an email stating that you have 
-been approved and are ready to begin accessing our data.
-
-## Support
-It is our goal at WPS to create the tools and services you need to succeed in this competitive market. If you have questions about permissions, acceptable uses, and best practices 
-please let us know. If you are experiencing technical difficulties, please consult the API Documentation first. Many times the answer will be there. But if you still need help, 
-please give us a call at <a href="tel:8009993388">1-800-999-3388</a> and we'll be glad to help.
 
 Now that you’re signed up, let’s get to work!
