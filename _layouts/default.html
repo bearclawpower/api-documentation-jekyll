@@ -36,8 +36,9 @@
 //                else console.log(AWS.config.credentials);
 //            });
 
-            $('button[type="submit"]').on('click', function (event) {
+            $('form').one('submit', function (event) {
                 event.preventDefault();
+                $(this).find('button[type="submit"]').attr('disabled', 'disabled');
                 app.send();
             });
         };
@@ -106,8 +107,8 @@
                     alert(err);
                     console.log(err, err.stack)
                 } else {
-                    $('article').html('<h5>Thanks! Your submission has been sent. We will be in touch shortly.</h5>');
                     $('html,body').scrollTop(0);
+                    $('article').html('<h5>Thanks! Your submission has been sent. We will be in touch shortly.</h5>');
                 }
             });
         };
