@@ -8,109 +8,72 @@
 {% include footer.html %}
 {% include anchor_links.html %}
 {% include analytics.html %}
-<script src="//code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
-<script src="https://sdk.amazonaws.com/js/aws-sdk-2.7.5.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 
 <script>
-    var app = app || {};
+    var App = App || {};
 
     (function ($) {
         $(function () {
-            app.region = 'us-west-2';
-            app.identity_pool_id = app.region + ':' + 'Enter identity pool id here';
+            App.init();
 
-            app.init();
+//            App.send_email_url = 'http://192.168.99.100:32768/api-documentation/signup-form/send-email';
+            App.send_email_url = 'http://calypso.wpswebservices.com/api-documentation/signup-form/send-email';
         });
 
-        app.init = function () {
-            AWS.config.update({
-                credentials: new AWS.CognitoIdentityCredentials({
-                    IdentityPoolId: app.identity_pool_id
-                }),
-                region: app.region
-            });
-
-            // For debugging the credentials that were sent.
-//            AWS.config.credentials.get(function (err) {
-//                if (err) console.log(err);
-//                else console.log(AWS.config.credentials);
-//            });
-
-            $('form').one('submit', function (event) {
+        App.init = function () {
+            $('#signup-form').on('submit', function (event) {
                 event.preventDefault();
                 $(this).find('button[type="submit"]').attr('disabled', 'disabled');
-                app.send();
+                App.send();
             });
         };
 
-        app.send = function () {
-            var ses = new AWS.SES({
-                apiVersion: '2010-12-01',
-                region: app.region
-            });
-
-            var name = $('input[name="name"]');
-            var phone = $('input[name="phone"]');
-            var email = $('input[name="email"]');
-            var dealer_id = $('input[name="dealer_id"]');
-            var comments = $('textarea[name="comments"]');
-
-            if (!name.val()) {
-                alert('The "Name" field is required.');
-                name.focus();
-                return false;
-            }
-            if (!phone.val()) {
-                alert('The "Phone" field is required.');
-                phone.focus();
-                return false;
-            }
-            if (!email.val()) {
-                alert('The "Email" field is required.');
-                email.focus();
-                return false;
-            }
-            if (!dealer_id.val()) {
-                alert('The "Dealer ID" field is required.');
-                dealer_id.focus();
-                return false;
-            }
-
-            var params = {
-                Source: 'amaddox@wps-inc.com',
-                Destination: {
-                    ToAddresses: [
-                        'amaddox@wps-inc.com'
-                    ]
-                },
-                Message: {
-                    Body: {
-                        Html: {
-                            Data: '' +
-                            '<p><strong>Name: </strong>' + name.val() + '</p>' +
-                            '<p><strong>Phone: </strong>' + phone.val() + '</p>' +
-                            '<p><strong>Email: </strong>' + email.val() + '</p>' +
-                            '<p><strong>Dealer ID: </strong>' + dealer_id.val() + '</p>' +
-                            '<p><strong>Comments: </strong>' + comments.val() + '</p>'
-                        }
-                    },
-                    Subject: {
-                        Data: 'Submission from the WPS API v4 Sign-up Form'
-                    }
-                },
-                ReplyToAddresses: [
-                    email.val()
-                ]
-            };
-            ses.sendEmail(params, function (err, data) {
-                if (err) {
-                    alert(err);
-                    console.log(err, err.stack)
-                } else {
-                    $('html,body').scrollTop(0);
-                    $('article').html('<h5>Thanks! Your submission has been sent. We will be in touch shortly.</h5>');
+        App.validate = function () {
+            var number_of_empty_inputs = 0;
+            $('#signup-form').find('input').each(function () {
+                if (!$(this).val()) {
+                    alert('The "' + $(this).attr('name') + '" field is required.');
+                    $('#signup-form').find('button[type="submit"]').attr('disabled', false);
+                    number_of_empty_inputs++;
                 }
             });
+            return number_of_empty_inputs;
+        };
+
+        App.send = function () {
+            if (App.validate() > 0) {
+                return false;
+            }
+
+            var request = $.ajax({
+                url: App.send_email_url,
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json'
+                },
+                data: $('#signup-form').serialize()
+            });
+            request.done(function (data, textStatus, jqXHR) {
+                $('html,body').scrollTop(0);
+                $('article').html('<h5>' + data.message + '</h5>');
+            });
+            request.fail(function (jqXHR, textStatus, errorThrown) {
+                App.ajaxRequestFailedAlert(jqXHR, textStatus, errorThrown);
+            });
+        };
+
+        App.ajaxRequestFailedAlert = function (jqXHR, textStatus, errorThrown) {
+            var data = JSON.parse(jqXHR.responseText);
+            var message = '';
+            for (var x in data) {
+                message += data[x] + "\n";
+            }
+
+            alert(textStatus.toUpperCase() + ": " + errorThrown + "\n\n" +
+                    message);
+
+            $('#signup-form').find('button[type="submit"]').attr('disabled', false);
         };
     })(jQuery);
 </script>

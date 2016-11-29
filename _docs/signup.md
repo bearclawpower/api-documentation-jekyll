@@ -19,7 +19,7 @@ been approved and are ready to begin accessing our data.
 
 ## Sign-up Form
 <div class="mobile-side-scroller">
-    <form action="" method="post" accept-charset="utf-8">
+    <form id="signup-form" action="" method="post" accept-charset="utf-8">
         <table>
             <thead>
                 <tr>
