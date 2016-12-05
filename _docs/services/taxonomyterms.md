@@ -24,31 +24,37 @@ Taxonomyterms are children of [Vocabularies][var_Vocabularies] and have a one-to
 ## Example requests
 
 ##### Collection
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/taxonomyterms
 ```
 
 ##### Entity
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/taxonomyterms/1
 ```
 
 ##### Associated [Images][var_Images]
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/taxonomyterms/1/images
 ```
 
 ##### Associated [Products][var_Products]
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/taxonomyterms/1/products
 ```
 
 ##### Associated [Vehiclemodels][var_Vehiclemodels]
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/taxonomyterms/1/vehiclemodels
 ```
 
 ##### Parent [Vocabulary][var_Vocabularies]
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/taxonomyterms/1/vocabulary
 ```

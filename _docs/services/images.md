@@ -21,46 +21,55 @@ endpoint to look up *other* relationships of interest in regards to that particu
 ## Example requests
 
 ##### Collection
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/images
 ```
 
 ##### Entity
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/images/96
 ```
 
 ##### Associated [Blocks][var_Blocks]
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/images/49944/blocks
 ```
 
 ##### Associated [Brands][var_Brands]
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/images/96/brands
 ```
 
 ##### Associated [Items][var_Items]
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/images/18220/items
 ```
 
 ##### Associated [Posts][var_Posts]
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/images/51112/posts
 ```
 
 ##### Associated [Products][var_Products]
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/images/48572/products
 ```
 
 ##### Associated [Tags][var_Tags]
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/images/1/tags
 ```
 
 ##### Associated [Taxonomyterms][var_Taxonomyterms]
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/images/49957/taxonomyterms
 ```

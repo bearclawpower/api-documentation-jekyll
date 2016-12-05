@@ -23,26 +23,31 @@ Tags allow us to mark certain [Products][var_Products] for the purpose of highli
 ## Example requests
 
 ##### Collection
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/tags
 ```
 
 ##### Entity
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/tags/25
 ```
 
 ##### Associated [Images][var_Images]
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/tags/25/images
 ```
 
 ##### Associated [Items][var_Items]
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/tags/25/items
 ```
 
 ##### Associated [Products][var_Products]
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/tags/23/products
 ```

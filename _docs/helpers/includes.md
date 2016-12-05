@@ -18,6 +18,7 @@ with each another. This fundamental feature makes your requests much more effici
 data you desire.
 
 Probably the most commonly used example of this functionality would be to request [Products][var_Products] with their associated [Items][var_Items] included.
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/products?include=items
 ```
@@ -32,6 +33,7 @@ Instead of retrieving an [Item][var_Items], making note of the `product_id` on t
 </div>
 
 Using the same idea as the previous example but reversing the parent/child relationship, we can retrieve [Items][var_Items] with their associated [Product][var_Products] included.
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/items?include=product
 ```
@@ -40,6 +42,7 @@ Using the same idea as the previous example but reversing the parent/child relat
 
 ## Multiple includes
 You can also combine multiple includes to produce even more powerful queries. Just separate each include with a comma (,).
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/products?include=features,images,items,tags
 ```
@@ -47,6 +50,7 @@ You can also combine multiple includes to produce even more powerful queries. Ju
 ## Collection or Entities
 Includes work the same on *collection* or *entity* requests. If we were to request one particular [Product][var_Products] and include all it's [Taxonomyterms][var_Taxonomyterms], the 
 request would look something like this:
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/products/207976?include=taxonomyterms
 ```
@@ -54,16 +58,19 @@ request would look something like this:
 ## More Examples
 
 Get a collection of [Items][var_Items] and include the [Images][var_Images] associated with each of them.
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/items?include=images
 ```
 
 Get a collection of [Attributekeys][var_Attributekeys] and include the [Attributevalues][var_Attributevalues] associated with each of them.
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/attributekeys?include=attributevalues
 ```
 
 Get a collection of [Attributevalues][var_Attributevalues] and include the **one parent** [Attributekey][var_Attributekeys] associated to each of them.
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/attributevalues?include=attributekey
 ```

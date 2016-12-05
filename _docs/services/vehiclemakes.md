@@ -14,16 +14,19 @@ You guessed it, the Vehiclemakes endpoint provides information on vehicle makes.
 ## Example requests
 
 ##### Collection
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/vehiclemakes
 ```
 
 ##### Entity
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/vehiclemakes/23
 ```
 
 ###### Associated [Vehiclemodels][var_Vehiclemodels]
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/vehiclemakes/23/vehiclemodels
 ```

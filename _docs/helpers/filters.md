@@ -85,11 +85,13 @@ The parameter syntax structure is: <code>?filter<span class="text-blue">[field]<
 ### Items
 
 In this example, only [Items][var_Items] with a `brand_id` of `135` (*FLY Racing*) would be returned.
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/items?filter[brand_id]=135
 ```
 
 In this example, only [Items][var_Items] with a `list_price` of **less than** `200` dollars would be returned.
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/items?filter[list_price][lt]=200
 ```
@@ -97,11 +99,13 @@ In this example, only [Items][var_Items] with a `list_price` of **less than** `2
 You can also combine multiple filters to produce even more powerful queries.
 
 In this example, only [Items][var_Items] with a `list_price` of **greater than** `200` dollars **and** less than `400` dollars would be returned.
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/items?filter[list_price][gt]=200&filter[list_price][lt]=400
 ```
 
 In this example, only [Items][var_Items] with a `sku` that are **prefixed with** `87-4` would be returned.
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/items?filter[sku][pre]=87-4
 ```
@@ -109,6 +113,7 @@ In this example, only [Items][var_Items] with a `sku` that are **prefixed with**
 ### Products
 
 In this example, only [Products][var_Products] with a `name` that are **prefixed with** `GM5` would be returned.
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/products?filter[name][pre]=GM5
 ```
@@ -117,6 +122,7 @@ You can also filter the associations of a Product.
 
 In this example, only a [Products][var_Products] [Tags][var_Tags] with a `name` that are **prefixed with** `Popu` would be returned.
 Since the following request ultimately returns [Tags][var_Tags], what we are filtering is the [Tags][var_Tags].
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/products/208016/tags?filter[name][pre]=Popu
 ```

@@ -94,12 +94,14 @@ The parameter syntax structure is: <code>?include=<span class="text-"><em>servic
 
 In this example, all the [Products][var_Products] along with their included [Items][var_Items] would be returned. However, the included [Items][var_Items] would be filtered down 
 to only the [Items][var_Items] that have a `list_price` of **Less than** `200` dollars.
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/products?include=items:filter(list_price|200|lt)
 ```
 
 In this example, all the [Products][var_Products] along with their included [Items][var_Items] would be returned. However, the included [Items][var_Items] would be filtered down 
 to only the [Items][var_Items] that have a `sku` that is **Prefixed with** `87-40`.
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/products?include=items:filter(sku|87-40|pre)
 ```

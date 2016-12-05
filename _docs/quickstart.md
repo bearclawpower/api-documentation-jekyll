@@ -10,7 +10,7 @@ permalink: /docs/quickstart/
 
 TLDR; For the impatient, here's how to make a request to our API.
 
-```sh
+```
 ~ $ curl -H "Authorization: Bearer Abc123XYZ" {{ site.api_protocol }}{{ site.api_url }}/items
 ```
 

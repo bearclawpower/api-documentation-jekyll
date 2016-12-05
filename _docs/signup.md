@@ -5,6 +5,7 @@ permalink: /docs/signup/
 ---
 
 ## Requesting an API access token
+
 You want an automated way to access our product data? You're in the right place. Use this sign-up form to gain access to our API. This is the first step you'll need to take before 
 you can start making requests to our API.
 
@@ -14,10 +15,12 @@ you can start making requests to our API.
 </div>
 
 ## Approval process
+
 Please allow 1-3 business days for your submission to be approved and your information to be added into our system. Once approved your will receive an email stating that you have 
 been approved and are ready to begin accessing our data.
 
 ## Sign-up Form
+
 <div class="mobile-side-scroller">
     <form id="signup-form" action="" method="post" accept-charset="utf-8">
         <table>

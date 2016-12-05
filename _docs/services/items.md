@@ -56,41 +56,49 @@ Items are the building blocks of a [Product][var_Products]. They are simplest fo
 ## Example requests
 
 ##### Collection
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/items
 ```
 
 ##### Entity
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/items/216584
 ```
 
 ##### Associated [Attributevalues][var_Attributevalues]
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/items/216584/attributevalues
 ```
 
 ##### Parent [Country][var_Countries]
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/items/216584/country
 ```
 
 ##### Associated [Images][var_Images]
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/items/216584/images
 ```
 
 ##### Parent [Product][var_Products]
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/items/216584/product
 ```
 
 ##### Associated [Tags][var_Tags]
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/items/216584/tags
 ```
 
 ##### Associated [Vehicles][var_Vehicles]
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/items/81897/vehicles
 ```

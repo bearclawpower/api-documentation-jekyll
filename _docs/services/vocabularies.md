@@ -12,16 +12,19 @@ holds the grouping of [Taxonomyterms][var_Taxonomyterms] inside.
 ## Example requests
 
 ##### Collection
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/vocabularies
 ```
 
 ##### Entity
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/vocabularies/3
 ```
 
 ##### Associated [Taxonomyterms][var_Taxonomyterms]
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/vocabularies/3/taxonomyterms
 ```

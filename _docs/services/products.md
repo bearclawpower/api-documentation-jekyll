@@ -33,56 +33,67 @@ Product is at the core of what the WPS API really provides.
 ## Example requests
 
 ##### Collection
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/products
 ```
 
 ##### Entity
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/products/207997
 ```
 
 ##### Associated [Attributekeys][var_Attributekeys]
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/products/207997/attributekeys
 ```
 
 ##### Associated [Attributevalues][var_Attributevalues]
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/products/207997/attributevalues
 ```
 
 ##### Associated [Blocks][var_Blocks]
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/products/207997/blocks
 ```
 
 ##### Associated [Features][var_Features]
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/products/207997/features
 ```
 
 ##### Associated [Images][var_Images]
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/products/207997/images
 ```
 
 ##### Associated [Items][var_Items]
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/products/207997/items
 ```
 
 ##### Associated [Resources][var_Resources]
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/products/26/resources
 ```
 
 ##### Associated [Tags][var_Tags]
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/products/207997/tags
 ```
 
 ##### Associated [Taxonomyterms][var_Taxonomyterms]
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/products/207997/taxonomyterms
 ```

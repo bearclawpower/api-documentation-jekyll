@@ -12,18 +12,23 @@ via the *entity* endpoint. The Countries endpoint also allows you to retrieve th
 ## Example requests
 
 ##### Collection
-```sh
+
+```
 {{ site.api_protocol }}{{ site.api_url }}/countries
 ```
 
 ##### Entity
+
 This request will return the entity with details like the Country `name` and Country `code`. Like in this example, the Country **id** of `101` = "Italy".
-```sh
+
+```
 {{ site.api_protocol }}{{ site.api_url }}/countries/101
 ```
 
 ##### Associated Items
+
 Get all the [Items][var_Items] associated with the Country of "Italy".
-```sh
+
+```
 {{ site.api_protocol }}{{ site.api_url }}/countries/101/items
 ```

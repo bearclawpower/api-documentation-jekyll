@@ -21,6 +21,7 @@ You will know that you have requested the last available page of results when th
 `null`.
 
 ### Request
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/products
 ```
@@ -28,6 +29,7 @@ You will know that you have requested the last available page of results when th
 Note that we did not send a `page[cursor]` initially.
 
 ### Response (truncated)
+
 ```json
 {
     "data": {
@@ -47,6 +49,7 @@ Note that we did not send a `page[cursor]` initially.
 We now have a means to move forwards through our data set, via the `next` cursor. Also note, the `prev` property is `null` because we're at the first page.
 
 To retrieve the next page of results, we can send the `next` cursor we just got on our subsequent request like so...
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/products?page[cursor]=lqjMdY6e6Z07
 ```

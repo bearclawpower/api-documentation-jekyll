@@ -85,16 +85,19 @@ More examples (there are hundreds):
 ### Attributekeys
 
 ##### Collection
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/attributekeys
 ```
 
 ##### Entity
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/attributekeys/15
 ```
 
 ##### Associated [Attributevalues][var_Attributevalues]
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/attributekeys/15/attributevalues
 ```
@@ -104,31 +107,37 @@ More examples (there are hundreds):
 ### Attributevalues
 
 ##### Collection
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/attributevalues
 ```
 
 ##### Entity
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/attributevalues/901
 ```
 
 ##### Parent [Attributekey][var_Attributekeys]
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/attributevalues/901/attributekey
 ```
 
 ##### Associated [Items][var_Items]
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/attributevalues/901/items
 ```
 
 ##### Associated [Products][var_Products]
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/attributevalues/1049/products
 ```
 
 ##### Associated [Vehicles][var_Vehicles]
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/attributevalues/679/vehicles
 ```

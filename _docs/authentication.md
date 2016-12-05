@@ -18,6 +18,7 @@ replacement to sending some username/password combination over HTTP which is not
 </div>
 
 ## Using your token
+
 <em>"Okay, I signed up, I was issued an API access token, now what?"</em>
 
 Access tokens are used in the `Authorization` header of your HTTP requests.
@@ -40,9 +41,11 @@ Using your access token in Postman would look something like this:
 ![Postman screenshot](/img/authentication-01-1478715172.png)
 
 ## Permission Scopes
+
 Every access token that is issued has permissions to make certain types of requests to the WPS API – these are called scopes.
 
 ## Revocation
+
 API access tokens align with account permissions. If your account is deleted or if you are no longer allowed access to our API, your tokens will be revoked.
 
 <div class="note info">

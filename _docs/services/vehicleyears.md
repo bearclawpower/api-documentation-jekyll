@@ -18,16 +18,19 @@ You can also determine all the [Vehiclemodels][var_Vehiclemodels] that are assoc
 ## Example requests
 
 ##### Collection
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/vehicleyears
 ```
 
 ##### Entity
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/vehicleyears/61
 ```
 
 ###### Associated [Vehiclemodels][var_Vehiclemodels]
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/vehicleyears/61/vehiclemodels
 ```

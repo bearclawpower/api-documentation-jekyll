@@ -18,17 +18,21 @@ In Version 4 of the WPS API, an effort was made to separate the *description* of
 ## Example requests
 
 ##### Collection
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/features
 ```
 
 ##### Entity
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/features/673
 ```
 
 ##### Parent Product
+
 Get the [Product][var_Products] that a particular feature belongs to.
+
 ```
 {{ site.api_protocol }}{{ site.api_url }}/features/673/product
 ```
