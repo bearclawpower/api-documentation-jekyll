@@ -15,7 +15,7 @@ the data surrounding a specific Brand via the *entity* endpoint.
 ## Example requests
 
 ##### Collection
-```sh
+```
 {{ site.api_protocol }}{{ site.api_url }}/brands
 ```
 
@@ -26,12 +26,12 @@ the data surrounding a specific Brand via the *entity* endpoint.
 
 ##### Associated Images
  Get all the [Images][var_Images] associated to the "FLY Racing" Brand.
-```sh
+```shell
 {{ site.api_protocol }}{{ site.api_url }}/brands/135/images
 ```
 
 ##### Associated Items
 Get all the [Items][var_Items] associated to the "FLY Racing" Brand.
-```sh
+```bash
 {{ site.api_protocol }}{{ site.api_url }}/brands/135/items
 ```
