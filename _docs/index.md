@@ -6,6 +6,7 @@ redirect_from: /docs/index.html
 ---
 
 [var_Signup]: /docs/signup
+[var_DataDepot]: http://www.wps-inc.com/data-depot
 
 This site aims to be a comprehensive guide to Version 4 of the WPS API. We’ll cover topics such as the purpose of the API, signing up for access, obtaining an access token, 
 determining what resources we offer, making your first request, and what to do if you have trouble getting the information you need.
@@ -14,10 +15,24 @@ determining what resources we offer, making your first request, and what to do i
 
 The WPS API is an easy-to-use, robust, and reliable way for dealers and/or other third parties to obtain product information that WPS has tirelessly acquired, generated, and 
 organized. This information can be used to populate your database, save and organize for import into software for your specific purpose, or even consume in real-time dynamically 
-on your website. Whether you writing a small script that quickly spins through our entire product line and imports vital pieces of product information into your system, or you 
-wish to completely automate your entire product info pipeline to the various sales channels your interact with, the WPS API can help.
+on your website. Whether you are writing a small script that quickly spins through our entire product line and imports vital pieces of product information into your system, or you 
+wish to completely automate your entire product info pipeline to the various sales channels you interact with, the WPS API can help.
 
 This is all provided to the WPS dealer network **for free** and is accessible 24/7/365 by simply [signing up for access][var_Signup].
+
+## Before you begin
+
+If you're reading this documentation, chances are you are interested in obtaining data from us in a server-to-server automated fashion. If you are not, you may find the 
+[Data Depot download area][var_DataDepot] more useful as it allows you to download the data in a point-and-click fashion for the purposes of importing into your system.
+
+<div class="note warning">
+  <h5>The obligatory out-of-your-depth warning</h5>
+  <p>The API is designed to be used by programmers who are familiar with the transmission of data via HTTP in a RESTful way. If you do not understand what those technologies mean, 
+  you may need to hire a programmer or recruit additional help from a third party.</p>
+</div>
+
+Simply put, if you are a programmer, I.T. manager, and/or a technology professional seeking a way to acquire and transmit data to and from Western Power Sports, 
+continue reading.
 
 ## Helpful Hints
 

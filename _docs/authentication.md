@@ -4,6 +4,23 @@ title: Authentication
 permalink: /docs/authentication/
 ---
 
+[var_Signup]: /docs/signup
+[var_Items]: /docs/services/items
+
+TLDR; For the impatient, here's how to make a request to our API.
+
+```
+~ $ curl -H "Authorization: Bearer Abc123XYZ" {{ site.api_protocol }}{{ site.api_url }}/items
+```
+
+Assuming you have completed the [signup process][var_Signup] and have been issued an access token, that request will return a list of [Items][var_Items].
+
+<div class="note info">
+  <h5>Just an example</h5>
+  <p>Keep in mind that there are many, many other ways to make HTTP requests besides <code>curl</code>. We'll go into more detail throughout the documentation but the cURL example 
+  is one that many programmers/developers/engineers are familiar with.</p>
+</div>
+
 To use any part of the WPS API, you’ll need an *API access token*. The WPS API uses access tokens to associate requests to API resources with your account.
 
 ## What is an API Access Token?
