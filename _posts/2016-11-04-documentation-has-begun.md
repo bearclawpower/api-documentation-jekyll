@@ -1,6 +1,6 @@
 ---
 layout: news_item
-title: 'Documentation of the v4 API has begun'
+title: 'Documentation of V4 has begun'
 date: 2016-11-04 11:10:38 -0700
 author: AustinMaddox
 categories: [latest news]
