@@ -37,17 +37,42 @@ Using the same idea as the previous example but reversing the parent/child relat
 ```
 {{ site.api_protocol }}{{ site.api_url }}/items?include=product
 ```
+
 <span class="text-pink">Pay special attention to singularity versus plurality of this request.</span> A [Product][var_Products] can have many [Items][var_Items], but an 
 [Item][var_Items] only belongs to one [Product][var_Products].
 
 ## Multiple includes
+
 You can also combine multiple includes to produce even more powerful queries. Just separate each include with a comma (,).
 
 ```
 {{ site.api_protocol }}{{ site.api_url }}/products?include=features,images,items,tags
 ```
 
+## Nested includes
+
+You can take includes a step further and retrieve an includes associations as well. Just separate each association by a dot (.). A request like this will include all the 
+[Items][var_Items] associated to a [Product][var_Products], but it will also include the [Images][var_Images] associated to those [Items][var_Items] as well.
+
+```
+{{ site.api_protocol }}{{ site.api_url }}/products?include=items.images
+```
+
+It doesn't stop at one level either. You can essentially include an infinite amount of relationship data on an include! You can go as deep as the relationships go. All you have 
+to do is separate each association by a dot (.).
+
+This request will return all the [Items][var_Items] associated to a [Product][var_Products], but it will also include the [Images][var_Images] associated to those 
+[Items][var_Items] and the [Tags][var_Tags] associated to those [Images][var_Images].
+
+```
+{{ site.api_protocol }}{{ site.api_url }}/products?include=items.images.tags
+```
+
+Keep in mind that this is just an example to help illustrate the usage of Nested includes. In reality, deep relationships like that are few and far between. Currently we don't have many (if any)
+[Tags][var_Tags] associated to [Images][var_Images] but hopefully this example will help you grasp the concept.
+
 ## Collection or Entities
+
 Includes work the same on *collection* or *entity* requests. If we were to request one particular [Product][var_Products] and include all it's [Taxonomyterms][var_Taxonomyterms], the 
 request would look something like this:
 
