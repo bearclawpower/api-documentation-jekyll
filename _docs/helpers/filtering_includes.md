@@ -12,7 +12,7 @@ permalink: /docs/helpers/filtering_includes/
 [var_Helpers_Filters]: /docs/helpers/filters
 [var_Helpers_Includes]: /docs/helpers/includes
 
-Much like standard [Filters][var_Helpers_Filters], filtering [includes][var_Helpers_Includes] gives you the ability to narrow down the results of a request to specific subset of data. The difference is what you 
+Much like standard [filters][var_Helpers_Filters], filtering [includes][var_Helpers_Includes] gives you the ability to narrow down the results of a request to specific subset of data. The difference is what you 
 are operating on. The includes themselves are the part of the response that is being filtered, not the primary service.
 
 For example, when you make a request like `/products?include=items:filter(brand_id|135)`, what you are actually saying is: *Give me all [Products][var_Products], and include 

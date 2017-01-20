@@ -17,6 +17,8 @@ You can also determine the [Taxonomyterms][var_Taxonomyterms] we use to categori
 
 Lastly, if you wish to determine all the [Vehicleyears][var_Vehicleyears] associated with a particular vehicle model, the Vehiclemodels endpoint is where you would make that request.
 
+This service can be useful for building a drop-down menu of "models".
+
 {% include fitment_access_warning.html %}
 
 ## Example requests

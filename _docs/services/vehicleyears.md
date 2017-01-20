@@ -13,6 +13,8 @@ The Vehicleyear endpoint allows you to retrieve a *collection* of all our Vehicl
 
 You can also determine all the [Vehiclemodels][var_Vehiclemodels] that are associated with a given Vehicleyear.
 
+This service can be useful for building a drop-down menu of "years".
+
 {% include fitment_access_warning.html %}
 
 ## Example requests

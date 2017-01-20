@@ -9,8 +9,8 @@ permalink: /docs/services/vehicles/
 [var_Vehiclemodels]: /docs/services/vehiclemodels
 [var_Vehicleyears]: /docs/services/vehicleyears
 
-The association of [Vehiclemodels][var_Vehiclemodels] to [Vehicleyears][var_Vehicleyears] form first-class citizens we call **Vehicles**. A Vehicle is just that; an actual, 
-physical vehicle. It is a veritable dirt bike, or ATV, or snowmobile, or whatever. But even still, it is not just a model that was produced at some point in time, like for example 
+The association of [Vehiclemodels][var_Vehiclemodels] to [Vehicleyears][var_Vehicleyears] form first-class citizens we call **Vehicles**. A Vehicle is just that; the actual, 
+physical machine. It is a veritable dirt bike, or ATV, or snowmobile, or whatever. But even still, it is not just a model that was produced at some point in time, like for example 
 a `CRF250R`; it is a specific year `2014` `CRF250R` dirt bike.
 
 The Vehicle endpoint allows you to retrieve a *collection* of all our Vehicles, or the data surrounding a specific Vehicle via the *entity* endpoint.
