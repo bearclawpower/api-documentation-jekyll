@@ -25,6 +25,12 @@ This request will return the entity with details like the Country `name` and Cou
 {{ site.api_protocol }}{{ site.api_url }}/countries/101
 ```
 
+...or send multiple ids separated by a comma(,)
+
+```
+{{ site.api_protocol }}{{ site.api_url }}/brands/44,101,208
+```
+
 ##### Associated Items
 
 Get all the [Items][var_Items] associated with the Country of "Italy".

@@ -44,6 +44,12 @@ Product is at the core of what the WPS API really provides.
 {{ site.api_protocol }}{{ site.api_url }}/products/207997
 ```
 
+...or send multiple ids separated by a comma(,)
+
+```
+{{ site.api_protocol }}{{ site.api_url }}/products/26,212506,212415,211896
+```
+
 ##### Associated [Attributekeys][var_Attributekeys]
 
 ```

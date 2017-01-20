@@ -35,6 +35,12 @@ This service can be useful for building a drop-down menu of "models".
 {{ site.api_protocol }}{{ site.api_url }}/vehiclemodels/2908
 ```
 
+...or send multiple ids separated by a comma(,)
+
+```
+{{ site.api_protocol }}{{ site.api_url }}/vehiclemodels/2908,1280,4275
+```
+
 ##### Associated [Taxonomyterms][var_Taxonomyterms]
 
 ```

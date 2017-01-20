@@ -23,6 +23,12 @@ holds the grouping of [Taxonomyterms][var_Taxonomyterms] inside.
 {{ site.api_protocol }}{{ site.api_url }}/vocabularies/3
 ```
 
+...or send multiple ids separated by a comma(,)
+
+```
+{{ site.api_protocol }}{{ site.api_url }}/vocabularies/1,2,3,7,8,10,11
+```
+
 ##### Associated [Taxonomyterms][var_Taxonomyterms]
 
 ```

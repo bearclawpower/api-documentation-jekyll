@@ -27,6 +27,12 @@ This service can be useful for building a drop-down menu of "makes".
 {{ site.api_protocol }}{{ site.api_url }}/vehiclemakes/23
 ```
 
+...or send multiple ids separated by a comma(,)
+
+```
+{{ site.api_protocol }}{{ site.api_url }}/vehiclemakes/23,30,31,42,48
+```
+
 ###### Associated [Vehiclemodels][var_Vehiclemodels]
 
 ```

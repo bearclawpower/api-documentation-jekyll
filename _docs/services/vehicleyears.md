@@ -31,6 +31,12 @@ This service can be useful for building a drop-down menu of "years".
 {{ site.api_protocol }}{{ site.api_url }}/vehicleyears/61
 ```
 
+...or send multiple ids separated by a comma(,)
+
+```
+{{ site.api_protocol }}{{ site.api_url }}/vehicleyears/1,2,3,4,61,62,63,64
+```
+
 ###### Associated [Vehiclemodels][var_Vehiclemodels]
 
 ```

@@ -96,6 +96,12 @@ More examples (there are hundreds):
 {{ site.api_protocol }}{{ site.api_url }}/attributekeys/15
 ```
 
+...or send multiple ids separated by a comma(,)
+
+```
+{{ site.api_protocol }}{{ site.api_url }}/attributekeys/1,13,15
+```
+
 ##### Associated [Attributevalues][var_Attributevalues]
 
 ```
@@ -116,6 +122,12 @@ More examples (there are hundreds):
 
 ```
 {{ site.api_protocol }}{{ site.api_url }}/attributevalues/901
+```
+
+...or send multiple ids separated by a comma(,)
+
+```
+{{ site.api_protocol }}{{ site.api_url }}/attributevalues/848,859,870,881,901
 ```
 
 ##### Parent [Attributekey][var_Attributekeys]

@@ -34,6 +34,12 @@ Tags allow us to mark certain [Products][var_Products] for the purpose of highli
 {{ site.api_protocol }}{{ site.api_url }}/tags/25
 ```
 
+...or send multiple ids separated by a comma(,)
+
+```
+{{ site.api_protocol }}{{ site.api_url }}/tags/10,7
+```
+
 ##### Associated [Images][var_Images]
 
 ```

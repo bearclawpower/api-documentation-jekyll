@@ -26,6 +26,12 @@ The `data` property is a *string* of markup that is commonly included when displ
 {{ site.api_protocol }}{{ site.api_url }}/blocks/1
 ```
 
+...or send multiple ids separated by a comma(,)
+
+```
+{{ site.api_protocol }}{{ site.api_url }}/blocks/1,2,3,4,5
+```
+
 ##### Associated [Images][var_Images]
 
 ```

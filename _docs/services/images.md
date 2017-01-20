@@ -32,6 +32,12 @@ endpoint to look up *other* relationships of interest in regards to that particu
 {{ site.api_protocol }}{{ site.api_url }}/images/96
 ```
 
+...or send multiple ids separated by a comma(,)
+
+```
+{{ site.api_protocol }}{{ site.api_url }}/images/96,52207,49944,18220,51112,48572
+```
+
 ##### Associated [Blocks][var_Blocks]
 
 ```

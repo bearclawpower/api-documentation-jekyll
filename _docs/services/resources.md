@@ -73,6 +73,12 @@ The other *types* of Resources would also work the same way. We provide the Vime
 {{ site.api_protocol }}{{ site.api_url }}/resources/1
 ```
 
+...or send multiple ids separated by a comma(,)
+
+```
+{{ site.api_protocol }}{{ site.api_url }}/resources/268,185,61
+```
+
 ##### Associated [Products][var_Products]
 
 ```

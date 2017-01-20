@@ -67,6 +67,12 @@ Items are the building blocks of a [Product][var_Products]. They are simplest fo
 {{ site.api_protocol }}{{ site.api_url }}/items/216584
 ```
 
+...or send multiple ids separated by a comma(,)
+
+```
+{{ site.api_protocol }}{{ site.api_url }}/items/216584,22864,72757,220510
+```
+
 ##### Associated [Attributevalues][var_Attributevalues]
 
 ```

@@ -36,6 +36,12 @@ Lastly, if you wish to determine all the [Items][var_Items] associated with a pa
 {{ site.api_protocol }}{{ site.api_url }}/vehicles/1
 ```
 
+...or send multiple ids separated by a comma(,)
+
+```
+{{ site.api_protocol }}{{ site.api_url }}/vehicles/1,2,3,4,5
+```
+
 ##### Associated [Attributevalues][var_Attributevalues]
 
 ```

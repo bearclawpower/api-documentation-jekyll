@@ -26,6 +26,12 @@ the data surrounding a specific Brand via the *entity* endpoint.
 {{ site.api_protocol }}{{ site.api_url }}/brands/135
 ```
 
+...or send multiple ids separated by a comma(,)
+
+```
+{{ site.api_protocol }}{{ site.api_url }}/brands/66,72,135,522
+```
+
 ##### Associated Images
 
  Get all the [Images][var_Images] associated to the "FLY Racing" Brand.

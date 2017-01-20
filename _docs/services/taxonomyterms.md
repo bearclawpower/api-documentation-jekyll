@@ -35,6 +35,12 @@ Taxonomyterms are children of [Vocabularies][var_Vocabularies] and have a one-to
 {{ site.api_protocol }}{{ site.api_url }}/taxonomyterms/1
 ```
 
+...or send multiple ids separated by a comma(,)
+
+```
+{{ site.api_protocol }}{{ site.api_url }}/taxonomyterms/53,51,37
+```
+
 ##### Associated [Images][var_Images]
 
 ```

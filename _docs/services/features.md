@@ -29,6 +29,12 @@ In Version 4 of the WPS API, an effort was made to separate the *description* of
 {{ site.api_protocol }}{{ site.api_url }}/features/673
 ```
 
+...or send multiple ids separated by a comma(,)
+
+```
+{{ site.api_protocol }}{{ site.api_url }}/features/8,1235,442,1820
+```
+
 ##### Parent Product
 
 Get the [Product][var_Products] that a particular feature belongs to.
