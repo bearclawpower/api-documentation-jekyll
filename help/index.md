@@ -5,12 +5,5 @@ title: Getting Help
 
 #### Need help with the WPS API?
 
-Send Tim K. an email at: _ _ _ _, his direct phone number is: _ _ _ _, you call his cell phone anytime (day or night) at: _ _ _ _.
-
-#### Don't speak english?
-
-No problem! Tim K. writes and speaks 13 languages fluently. Just call or email him in your native dialect and he is sure to understand your issue and communicate the solution effectively.
-
-#### Can't afford a programmer?
-
-No problem! Tim K. has got you covered and can answer all your programming questions for **free**.
+If you are experiencing technical difficulties, please consult the documentation first. Many times the answer will be there. But if you still need help, please give us a call 
+at 1-800-999-3388 or email web_services@wps-inc.com and we’ll be glad to help.
