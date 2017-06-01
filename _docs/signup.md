@@ -6,12 +6,14 @@ permalink: /docs/signup/
 
 ## Requesting an API access token
 
-You want an automated way to access our product data? You're in the right place. Use this sign-up form to gain access to our API. This is the first step you'll need to take before 
-you can start making requests to our API.
+To get started using any version of our API, you must be an active dealer in good standing with Western Power Sports. Use this sign-up form to gain access to our API. This is the 
+first step you'll need to take before you can start making requests to our API.
 
 <div class="note warning">
-  <h5>Dealer Account Required</h5>
-  <p>To get started using any version of our API, you must be an active dealer in good standing with Western Power Sports. You will be required to provide valid wpsorders.com credentials.</p>
+  <h5>Dealers Only</h5>
+  <p>The sign-up form is for WPS account holders, not to be used by application developers. It is important that the account holder themselves be the one who fills out the sign-up 
+  form and not a third party or programmer working for the account holder. If you are a developer working for a WPS dealer, please instruct the dealer to sign up and then 
+  give you the access token after it is issued to them.</p>
 </div>
 
 ## Approval process
