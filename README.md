@@ -1,12 +1,11 @@
 # api-documentation-jekyll
 
-Build
-```
-docker run -it --rm --name="jekyll-build" -v $(pwd):/srv/jekyll jekyll/jekyll:pages jekyll build
+#### Build
+```shell
+docker run -it --rm -v $PWD:/srv/jekyll jekyll/builder:pages jekyll build
 ```
 
-Serve
-```
-docker run -it --rm --name="jekyll-serve" -v $(pwd):/srv/jekyll -p $(docker-machine ip `docker-machine active`):4000:4000 jekyll/jekyll:pages jekyll serve --force_polling --incremental
-docker run -d --name="jekyll-serve" -v $(pwd):/srv/jekyll -p $(docker-machine ip `docker-machine active`):4000:4000 jekyll/jekyll:pages jekyll serve --force_polling --incremental
+#### Serve
+```shell
+docker run -it --rm -v $PWD:/srv/jekyll -p 4000:4000 jekyll/builder:pages jekyll serve --force_polling --incremental
 ```
